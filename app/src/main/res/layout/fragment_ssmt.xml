@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ssmt_fragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SsmtFragment"
+    android:background="@drawable/white_box">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ssmt_pilih_orang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Perhatikan sekitar sebelum membuka gerbang. Gerbang otomatis dapat menyebabkan kematian ataupun cedera"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_dark_gray"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:drawableStart="@drawable/caution"
+            android:drawablePadding="5dp" />
+
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/ssmt_slide_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:elevation="2dp"
+            app:slider_locked="false"
+            app:slider_height="60dp"
+            app:area_margin="5dp"
+            app:icon_margin="11dp"
+            app:outer_color="@color/green"
+            app:text="        Geser untuk membuka"
+            app:text_size="15sp"
+            app:text_style="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+
+        <Button
+            android:id="@+id/ssmt_stop_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:stateListAnimator="@null"
+            android:elevation="2dp"
+            android:text="STOP"
+            android:textSize="17dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_black"
+            android:background="@drawable/stop_button" />
+
+        <TextView
+            android:id="@+id/ssmt_pintu_yang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Pintu yang masih dalam keadaan terbuka, akan tertutup secara otomatis dalam 30 detik"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_dark_gray"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.core.widget.NestedScrollView>
+

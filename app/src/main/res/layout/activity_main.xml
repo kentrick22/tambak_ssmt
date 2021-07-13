@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/halo_login"
+        android:layout_width="189dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10"
+        app:srcCompat="@drawable/halo_login" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/login_white_box"
+        android:layout_width="344dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/white_box"
+        app:layout_constraintBottom_toTopOf="@id/login_ssmt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/halo_login" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/input_box"
+                android:drawableStart="@drawable/message_final"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/input_box"
+                android:drawableStart="@drawable/key_final"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:id="@+id/login_forget_pw_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lupa Kata Sandi?"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginEnd="5dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/login_forget_pw_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Klik di Sini"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginEnd="32dp"
+                    android:clickable="true"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Login"
+                android:textAllCaps="true"
+                android:textSize="24dp"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/login_to_signup_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak memiliki akun?"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/dark_gray"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/login_to_signup_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:clickable="false"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/login_ssmt"
+        android:layout_width="114dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_white_box"
+        app:layout_constraintVertical_bias="0.70"
+        app:srcCompat="@drawable/ssmt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
